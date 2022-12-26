@@ -2,7 +2,7 @@ package ru.job4j.pojo;
 
 public class Student {
     private String fullname;
-    private int Group;
+    private int group;
     private String date;
 
     public String getFullname() {
@@ -14,11 +14,11 @@ public class Student {
     }
 
     public int getGroup() {
-        return Group;
+        return group;
     }
 
     public void setGroup(int group) {
-        Group = group;
+        this.group = group;
     }
 
     public String getDate() {
