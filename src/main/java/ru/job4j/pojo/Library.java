@@ -8,8 +8,8 @@ public class Library {
         Book book3 = new Book("Home", 50);
         Book[] books = {book, book1, book2, book3};
         for (Book num : books) {
-            System.out.println("Название книги: " + num.getName() +
-                    "." + " " + "Кол-во страниц: " + num.getTotalpages());
+            System.out.println("Название книги: " + num.getName() + "."
+                    + " " + "Кол-во страниц: " + num.getTotalpages());
         }
         System.out.println();
         for (int i = 0; i < books.length; i++) {
@@ -18,8 +18,8 @@ public class Library {
                 books[i] = books[books.length - 1];
                 books[books.length - 1] = temp;
             }
-            System.out.println("Название книги: " + books[i].getName() +
-                    "." + " " + "Кол-во страниц: " + books[i].getTotalpages());
+            System.out.println("Название книги: " + books[i].getName() + "."
+                    + " " + "Кол-во страниц: " + books[i].getTotalpages());
         }
         System.out.println();
         for (Book num : books) {
