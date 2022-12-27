@@ -11,20 +11,18 @@ public class Library {
             System.out.println("Название книги: " + num.getName() + "."
                     + " " + "Кол-во страниц: " + num.getTotalpages());
         }
+        Book temp = books[0];
+        books[0] = books[3];
+        books[3] = temp;
         System.out.println();
-        for (int i = 0; i < books.length; i++) {
-            if (i == 0) {
-                Book temp = books[i];
-                books[i] = books[books.length - 1];
-                books[books.length - 1] = temp;
-            }
-            System.out.println("Название книги: " + books[i].getName() + "."
-                    + " " + "Кол-во страниц: " + books[i].getTotalpages());
+        for (Book num : books) {
+            System.out.println("Название книги: " + num.getName() + "."
+                    + " " + "Кол-во страниц: " + num.getTotalpages());
         }
         System.out.println();
         for (Book num : books) {
-            if (num.getName().equals("Clean code")) {
-                System.out.println("Название книги: " + num.getName() + "Кол-во страниц: " + num.getTotalpages());
+            if ("Clean code".equals(num.getName())) {
+                System.out.println("Название книги: " + num.getName() + ". " + "Кол-во страниц: " + num.getTotalpages());
             }
         }
     }
