@@ -146,10 +146,10 @@ public class StartUITest {
         new StartUI(output).init(in, tracker, actions);
         String ln = System.lineSeparator();
         assertThat(output.toString()).isEqualTo(
-                "Menu." + ln
+                "Menu:" + ln
                         + "0. Exit" + ln
                         + "Wrong input, you can select: 0 .. 0" + ln
-                        + "Menu." + ln
+                        + "Menu:" + ln
                         + "0. Exit" + ln
         );
     }
